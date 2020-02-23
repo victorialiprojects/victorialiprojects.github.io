@@ -1,0 +1,10 @@
+---
+title: "Welcome"
+output: html_document
+---
+
+##     Victoria Li
+
+Home:                              Tel: (647)-517-2938                              Thornhill, Ontario L4J7V3          Email: v42li@uwaterloo.ca
+
+------------------------------------------------------------------------------------

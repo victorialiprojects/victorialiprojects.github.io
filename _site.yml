@@ -1,0 +1,28 @@
+name: "Security Center"
+navbar:
+  title: "Victoria Li"
+  type: inverse
+  left:
+    - text: "Home"
+      icon: fa-home
+      href: index.html
+    - text: "Resume"
+      icon: fa-address-card
+      href: resume.html
+    - text: "Interests"
+      icon: glyphicon-headphones
+      menu:
+        - text: "Shopping"
+          icon: fa-shopping-bag
+          href: shopping.html
+        - text: "Sports/Travels"
+          icon: fa-soccer-ball-o
+          href: sports-travels.html
+        - text: "Blogs"
+          icon: glyphicon-list-alt
+          href: blogs.html   
+       
+  right:
+    - icon: fa-question fa-lg
+      href: https://uwaterloo.ca/engineering/departments-schools-and-programs
+    
