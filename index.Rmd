@@ -1,10 +1,22 @@
 ---
-title: "Welcome"
+title: "Welcome and Thank You for Visiting https://victorialiprojects.github.io/"
 output: html_document
 ---
 
-##     Victoria Li
+## Under construction
 
-Home:                              Tel: (647)-517-2938                              Thornhill, Ontario L4J7V3          Email: v42li@uwaterloo.ca
+```{r sports, echo=FALSE}
+library("jpeg")
+jj <- readJPEG("images/underconstruction.jpg",native=TRUE)
+plot(0:1,0:1,type="n",ann=FALSE,axes=FALSE)
+rasterImage(jj,0,0,1,1)
+```
 
-------------------------------------------------------------------------------------
+
+## You can find me: 
+
+linkedin.com/in/victoria-li-profile  or 
+
+github.com/victorialiprojects
+
+
