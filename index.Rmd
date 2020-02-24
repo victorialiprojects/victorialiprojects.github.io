@@ -3,15 +3,6 @@ title: "Welcome and Thank You for Visiting https://victorialiprojects.github.io/
 output: html_document
 ---
 
-## Under construction
-
-```{r sports, echo=FALSE}
-library("jpeg")
-jj <- readJPEG("images/underconstruction.jpg",native=TRUE)
-plot(0:1,0:1,type="n",ann=FALSE,axes=FALSE)
-rasterImage(jj,0,0,1,1)
-```
-
 
 ## You can find me: 
 
