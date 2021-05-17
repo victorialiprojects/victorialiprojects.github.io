@@ -287,12 +287,22 @@ $(document).ready(function () {
     Resume
   </a>
 </li>
-<li>
-  <a href="Portfolio.html">
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     <span class="fa fa-folder-open"></span>
      
     Portfolio
+     
+    <span class="caret"></span>
   </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="HealthCanada.html">Health Canada - Winter 2021</a>
+    </li>
+    <li>
+      <a href="Portfolio.html">IBM - Summer 2020</a>
+    </li>
+  </ul>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -359,22 +369,28 @@ body{ /* Normal  */
 <h1 id="my-resume">My Resume</h1>
 </div>
 <p><strong>Open PDF:</strong> <a href="Resume_VictoriaLi.pdf" download>Victoria-Resume</a></p>
-<p><strong>Education: Biomedical Engineering - University of Waterloo – BASc</strong></p>
+<p><strong>Education: Biomedical Engineering - University of Waterloo – BASc (2019-2024)</strong></p>
 <hr />
 <div id="summary" class="section level2">
 <h2>Summary:</h2>
-<p>Passionate student with professional experience in both <strong>front-end and back-end development projects</strong>, fast-paced environments, and project management.</p>
+<p>Passionate and hard working student with professional experience in both front-end and back-end development projects, scripting, fast-paced environments, and project management.</p>
 </div>
 <div id="skills-and-certifications" class="section level2">
 <h2>Skills and Certifications</h2>
 <ul>
-<li><p>Proficient with: Java, C++, C#, R, UiPath, Git (version control), Python, SOLIDWORKS, Jenkins, HTML, CSS, RESTful APIs, JSON, MS Office</p></li>
-<li><p>Experienced with: automation concepts, process development, machine learning, agile methodology, software development and testing</p></li>
-<li><p>IBM Badges: IBM Automation Practitioner Badge, Machine Learning with Python, Healthcare Industry Jumpstart</p></li>
+<li><p>Experienced with: Python, Java, C++, C#, R, Linux, Git (version control), PostgreSQL, SOLIDWORKS, Jenkins, HTML, CSS, RESTful APIs, JSON, MS Office</p></li>
+<li><p>Familiar with: scripting, front-end development, test driven development, automation concepts, data analysis, machine learning, agile methodology, software development and testing</p></li>
+<li><p>IBM Badges: Introduction to Containers, Kubernetes, Docker, and OpenShift, IBM Automation Practitioner Badge, Machine Learning with Python, Healthcare Industry Jumpstart</p></li>
 </ul>
 </div>
 <div id="experience" class="section level2">
 <h2>Experience</h2>
+<p><strong>DATA SCIENTIST</strong> – <strong>Health Canada</strong> Jan 2021 – May 2021</p>
+<ul>
+<li><p>Used Python and various libraries such as Scrapy to write a script to extract and save Nuxeo website statistics into a PostgreSQL database allowing for an analysis of website traffic</p></li>
+<li><p>Wrote complex SQL queries to identify duplicate files using their hash values in a large dataset, resulting in over 8 GB of freed storage</p></li>
+<li><p>Created Jupyter notebooks to analyze datasets with libraries (Numpy, Pandas) and performed a time series forecasting machine learning model to predict when future crashes may occur on the Nuxeo site</p></li>
+</ul>
 <p><strong>PROCESS AUTOMATION DEVELOPER</strong> – <strong>IBM Canada</strong> May 2020 – September 2020</p>
 <ul>
 <li><p>Created an user interface platform by analyzing users and personas and automated business rules with Java for a mortgage loan application use case, which results in multiple FTE (full time employee) reductions</p></li>
@@ -382,6 +398,7 @@ body{ /* Normal  */
 </ul>
 <p><strong>BUSINESS AND MARKETING DIRECTOR</strong> – <strong>UW Nanorobotics Group</strong> Sept 2019 – Current</p>
 <ul>
+<li><p>Managed a high performing team of over 20+ engineering students and delegated weekly tasks to develop nanotechnology solutions</p></li>
 <li><p>Rebuilt a website to update recent projects and accomplishments using WordPress to maintain an online presence</p></li>
 <li><p>Created presentations and negotiated with funding committees</p></li>
 <li><p>Raised over $4500 from presentation pitches which increased team morale and enabled us to make significant progress in our projects</p></li>
@@ -394,10 +411,6 @@ body{ /* Normal  */
 <p><strong>COMMUNICATIONS LEAD</strong> – Engineering Ambassadors</p>
 <ul>
 <li>Lead the communications arrangements and planned events with a strong focus on achieving our goal to increase ambassador participation by at least 20%</li>
-</ul>
-<p><strong>SERVER</strong> – <strong>Marigolds and Onions</strong> Jul 2015 – Aug 2016</p>
-<ul>
-<li>Provided high quality customer service by communicating to Rogers Cup volunteer and media personnel and received praise from manager</li>
 </ul>
 <p><strong>HOST</strong> – <strong>Ontario Science Centre</strong> March 2019</p>
 <ul>
@@ -416,13 +429,8 @@ body{ /* Normal  */
 <p><strong>INTEGRATED MARKETING CAMPAIGN</strong> – DECA</p>
 <ul>
 <li>Created a full marketing plan for Winterlude, a Canadian event hosted in Ottawa</li>
-<li>Competed internationally and achieved top 10</li>
+<li>Competed internationally and achieved top 10 out of over 100 other teams</li>
 <li>Worked in an agile team of 3 and gained a new appreciation of the importance of teamwork and communication in high stress times</li>
-</ul>
-<p><strong>UNLIMBITED TEAM MEMBER</strong> – Biomechatronics Waterloo</p>
-<ul>
-<li>Attended sessions on machine learning using Python for medical devices and created my own program to perform a machine learning algorithm</li>
-<li>3D-Printed parts of a prosthetic hand and started initiative to donate to prosthetic hand organizations</li>
 </ul>
 <p><strong>HACKER (HACKATHON)</strong> – Starterhacks</p>
 <ul>
@@ -444,17 +452,18 @@ body{ /* Normal  */
 </div>
 <div id="volunteer-work" class="section level2">
 <h2>Volunteer Work</h2>
-<p><strong>York University Science</strong></p>
+<p><strong>York University Science Engagement Camps</strong></p>
 <ul>
 <li>Engagement Camp Counsellor - Planned and organized activities with limited resources for youth to inspire their interest in science and was able to increase engagement for every session</li>
 </ul>
 <p><strong>Night It Up General Volunteer</strong></p>
 <ul>
-<li>Raised funds for the ALS double play beneficiary by providing youth with hands-on activities</li>
+<li>Raised funds and awareness for the ALS Double Play beneficiary by providing youth with hands-on activities</li>
 </ul>
 </div>
 <div id="awards" class="section level2">
 <h2>Awards</h2>
+<p><strong>Term Dean’s Honour List</strong> (Fall 2020)</p>
 <p><strong>Deca (Distributive Executive Clubs of America) Internationals Top 10</strong> (2019)</p>
 <ul>
 <li>Integrated Marketing Campaign Event, created marketing plan for a major event and competed with over 100 students</li>
@@ -472,10 +481,9 @@ body{ /* Normal  */
 <div id="interests" class="section level2">
 <h2>Interests</h2>
 <p>I have another tab for this so please check it out!</p>
-<p>I love plants! Please feel free to discuss this topic with me.</p>
-<p>Biotechnology - I have attended the Biotechnology conference</p>
-<p>I used to play rep volleyball, definitely would like to talk about my experience!</p>
-<p>Assisting and working with youth, love tutoring and teaching young children about topics I love</p>
+<p>I love house plants! Please feel free to discuss this topic with me.</p>
+<p>I used to play rep volleyball, definitely would like to talk about my experience.</p>
+<p>I enjoy assisting and working with youth, I have been tutoring for various students since grade 10 in many different subjects. It’s my passion to share my knowledge and help others become more confident in their abilities!</p>
 </div>
 
 
